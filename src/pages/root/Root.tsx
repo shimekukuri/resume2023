@@ -29,8 +29,29 @@ export default function Root() {
                 translateY={['-99vh', '100vh']}
               >
                 <div>
-                  <Parallax speed={-50} rotate={[-9999, 360]}>
+                  <Parallax speed={-40} rotate={[-900, 360]}>
                     <div className="w-44">
+                      <img
+                        src="https://www.kindpng.com/picc/m/13-131481_8-bit-star-png-transparent-png.png"
+                        alt="8 Bit Star Png, Transparent Png@kindpng.com"
+                      />
+                    </div>
+                  </Parallax>
+                </div>
+              </Parallax>
+            ),
+          },
+          {
+            speed: -20,
+            translateX: ['40vw', '-40vw'],
+            children: (
+              <Parallax
+                className="h-screen w-11/12  flex justify-end"
+                translateY={['-99vh', '100vh']}
+              >
+                <div>
+                  <Parallax speed={-25} rotate={[-900, 360]}>
+                    <div className="w-24">
                       <img
                         src="https://www.kindpng.com/picc/m/13-131481_8-bit-star-png-transparent-png.png"
                         alt="8 Bit Star Png, Transparent Png@kindpng.com"
@@ -169,13 +190,42 @@ export default function Root() {
           },
         ]}
       ></ParallaxBanner>
-      <div className="h-screen">
+      <div
+        className="overflow-clip h-screen"
+        style={{ backgroundColor: 'rgb(53, 53, 65)' }}
+      >
         <Parallax
           translateX={['0vw', '99vw']}
           translateY={['99vh', '1vh']}
-          rootMargin={-99}
+          rootMargin={{ top: 50, bottom: 100, right: 100, left: 100 }}
         >
           Test
+        </Parallax>
+        <Parallax
+          speed={-5}
+          className="flex h-screen w-screen justify-center items-center"
+          style={{ backgroundColor: 'rgb(169, 170, 255)' }}
+        >
+          <div className="bg-red-500">d</div>
+        </Parallax>
+      </div>
+      <div
+        className="overflow-clip h-screen"
+        style={{ backgroundColor: 'rgb(53, 53, 65)' }}
+      >
+        <Parallax
+          translateX={['0vw', '99vw']}
+          translateY={['99vh', '1vh']}
+          rootMargin={{ top: 50, bottom: 100, right: 100, left: 100 }}
+        >
+          Test
+        </Parallax>
+        <Parallax
+          speed={-5}
+          className="flex h-screen w-screen justify-center items-center"
+          style={{ backgroundColor: 'rgb(169, 170, 255)' }}
+        >
+          <div className="bg-red-500">d</div>
         </Parallax>
       </div>
     </ParallaxProvider>
