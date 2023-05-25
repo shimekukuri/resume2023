@@ -204,7 +204,6 @@ export default function Root() {
         <Parallax
           speed={-5}
           className="flex h-screen w-screen justify-center items-center"
-          style={{ backgroundColor: 'rgb(169, 170, 255)' }}
         >
           <div className="bg-red-500">d</div>
         </Parallax>
@@ -214,11 +213,12 @@ export default function Root() {
         style={{ backgroundColor: 'rgb(53, 53, 65)' }}
       >
         <Parallax
+          className="bg-blue-600"
           translateX={['0vw', '99vw']}
           translateY={['99vh', '1vh']}
-          rootMargin={{ top: 50, bottom: 100, right: 100, left: 100 }}
+          rootMargin={{ top: 25, bottom: 100, right: 100, left: 100 }}
         >
-          Test
+          <div className="bg-blue-600">test</div>
         </Parallax>
         <Parallax
           speed={-5}
