@@ -1,0 +1,8 @@
+:has(> .inner) {
+  background-color: red;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+}

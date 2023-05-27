@@ -7,6 +7,7 @@ import {
 import star from '/space2.png';
 import kirby from '/kirbynobg.png';
 import testoo from '/testSmall.png';
+import { Children } from 'react';
 
 export default function Root() {
   return (
@@ -68,21 +69,24 @@ export default function Root() {
               <div className="absolute inset-0 items-center justify-center inline-flex mx-2">
                 <Parallax
                   speed={46}
-                  translateX={['-100px', '100px']}
+                  translateX={['100px', '-100px']}
+                  translateY={[-50, 50]}
                   className="prose prose-h2:"
                 >
                   <h2 className="text-4xl">T</h2>
                 </Parallax>
                 <Parallax
                   speed={16}
-                  translateX={['-100px', '100px']}
+                  translateX={['50px', '-50px']}
+                  translateY={[-20, 20]}
                   className="prose prose-h2:"
                 >
                   <h2 className="text-4xl">Y</h2>
                 </Parallax>
                 <Parallax
-                  speed={42}
-                  translateX={['-100px', '100px']}
+                  speed={46}
+                  translateX={['-150px', '150px']}
+                  translateY={[-80, 80]}
                   className="prose prose-h2:"
                 >
                   <h2 className="text-4xl">L</h2>
@@ -190,9 +194,31 @@ export default function Root() {
           },
         ]}
       ></ParallaxBanner>
+      <ParallaxBanner
+        className="flex justify-end h-screen"
+        layers={[
+          {
+            speed: -10,
+            children: (
+              <div
+                className="h-full"
+                style={{ backgroundColor: 'rgb(53, 53, 65)' }}
+              ></div>
+            ),
+          },
+          {
+            children: (
+              <div
+                className="h-4/5 bg-red-500"
+                // style={{ backgroundColor: 'rgb(106, 209, 252)' }}
+              ></div>
+            ),
+          },
+        ]}
+      ></ParallaxBanner>
       <div
         className="overflow-clip h-screen"
-        style={{ backgroundColor: 'rgb(53, 53, 65)' }}
+        style={{ backgroundColor: 'rgb(106, 209, 252)' }}
       >
         <Parallax
           translateX={['0vw', '99vw']}
