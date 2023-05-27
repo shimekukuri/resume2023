@@ -1,0 +1,9 @@
+:has(> .containerize) {
+  container-type: inline-size;
+}
+
+@container (min-width: 400px) {
+  .works {
+    font-size: 8rem;
+  }
+}
