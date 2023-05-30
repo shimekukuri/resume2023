@@ -194,31 +194,10 @@ export default function Root() {
           },
         ]}
       ></ParallaxBanner>
-      <ParallaxBanner
-        className="flex justify-end h-screen"
-        layers={[
-          {
-            speed: -10,
-            children: (
-              <div
-                className="h-full"
-                style={{ backgroundColor: 'rgb(53, 53, 65)' }}
-              ></div>
-            ),
-          },
-          {
-            children: (
-              <div
-                className="h-4/5 bg-red-500"
-                // style={{ backgroundColor: 'rgb(106, 209, 252)' }}
-              ></div>
-            ),
-          },
-        ]}
-      ></ParallaxBanner>
+      <div style={{ backgroundColor: 'rgb(53,53,65)', height: '50vh' }}></div>
       <div
         className="overflow-clip h-screen"
-        style={{ backgroundColor: 'rgb(106, 209, 252)' }}
+        style={{ backgroundColor: 'rgb(53,53,65)' }}
       >
         <Parallax
           translateX={['0vw', '99vw']}
@@ -227,32 +206,81 @@ export default function Root() {
         >
           Test
         </Parallax>
+
+        <Parallax speed={10} className="flex h-screen w-screen self-end">
+          <Parallax speed={20} className="flex h-screen w-screen self-end">
+            <div
+              className="w-full"
+              style={{ backgroundColor: 'rgb(86,120,128)' }}
+            >
+              <Parallax speed={30} className="flex h-screen w-screen self-end">
+                <div
+                  className="w-full"
+                  style={{ backgroundColor: 'rgb(103,154,160)' }}
+                >
+                  <Parallax
+                    speed={40}
+                    className="flex h-screen w-screen self-end"
+                  >
+                    <div
+                      className="w-full"
+                      style={{ backgroundColor: 'rgb(120,188,192)' }}
+                    >
+                      <Parallax
+                        speed={50}
+                        className="flex h-screen w-screen self-end"
+                      >
+                        <div
+                          className="w-full"
+                          style={{ backgroundColor: 'rgb(136,221,223)' }}
+                        >
+                          <Parallax
+                            speed={60}
+                            className="flex h-screen w-screen self-end"
+                          >
+                            <div
+                              className="w-full"
+                              style={{ backgroundColor: 'rgb(136,221,223)' }}
+                            >
+                              <Parallax
+                                speed={70}
+                                className="flex h-screen w-screen self-end"
+                              >
+                                <div
+                                  className="w-full"
+                                  style={{
+                                    backgroundColor: 'rgb(153,255,255)',
+                                  }}
+                                ></div>
+                              </Parallax>
+                            </div>
+                          </Parallax>
+                        </div>
+                      </Parallax>
+                    </div>
+                  </Parallax>
+                </div>
+              </Parallax>
+            </div>
+          </Parallax>
+        </Parallax>
         <Parallax
-          speed={-5}
-          className="flex h-screen w-screen justify-center items-center"
+          speed={-50}
+          className="w-full flex justify-center"
+          rootMargin={{ top: -10, bottom: 100, left: 100, right: 100 }}
         >
-          <div className="bg-red-500">d</div>
+          <div className="w-1/5">
+            <Parallax rotate={[0, 200]}>
+              <img src={kirby} alt="meep" />
+            </Parallax>
+          </div>
         </Parallax>
       </div>
       <div
-        className="overflow-clip h-screen"
-        style={{ backgroundColor: 'rgb(53, 53, 65)' }}
+        className="h-screen flex flex-col-reverse overflow-clip"
+        style={{ backgroundColor: 'rgb(153,255,255)' }}
       >
-        <Parallax
-          className="bg-blue-600"
-          translateX={['0vw', '99vw']}
-          translateY={['99vh', '1vh']}
-          rootMargin={{ top: 25, bottom: 100, right: 100, left: 100 }}
-        >
-          <div className="bg-blue-600">test</div>
-        </Parallax>
-        <Parallax
-          speed={-5}
-          className="flex h-screen w-screen justify-center items-center"
-          style={{ backgroundColor: 'rgb(169, 170, 255)' }}
-        >
-          <div className="bg-red-500">d</div>
-        </Parallax>
+        <div className="bg-green-300 h-3/5 rotate-12 translate-x-1/3 translate-y-12  md:-rotate-12 rounded-tl-full md:translate-x-1/2 md:translate-y-5"></div>
       </div>
     </ParallaxProvider>
   );
