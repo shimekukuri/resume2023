@@ -267,7 +267,7 @@ export default function Root() {
         <Parallax
           speed={-50}
           className="w-full flex justify-center"
-          rootMargin={{ top: -10, bottom: 100, left: 100, right: 100 }}
+          rootMargin={{ top: -100, bottom: 100, left: 100, right: 100 }}
         >
           <div className="w-1/5">
             <Parallax rotate={[0, 200]}>
@@ -281,6 +281,9 @@ export default function Root() {
         style={{ backgroundColor: 'rgb(153,255,255)' }}
       >
         <div className="bg-green-300 h-3/5 rotate-12 translate-x-1/3 translate-y-12  md:-rotate-12 rounded-tl-full md:translate-x-1/2 md:translate-y-5"></div>
+      </div>
+      <div className="h-screen">
+        <div className="containerize"></div>
       </div>
     </ParallaxProvider>
   );
