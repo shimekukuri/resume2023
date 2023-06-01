@@ -1,4 +1,3 @@
-import { Outlet } from 'react-router-dom';
 import {
   Parallax,
   ParallaxBanner,
@@ -7,7 +6,8 @@ import {
 import star from '/space2.png';
 import kirby from '/kirbynobg.png';
 import testoo from '/testSmall.png';
-import { Children } from 'react';
+import { Children, useEffect, useState, useRef } from 'react';
+import Hill from '../scenes/hillScene/Hill';
 
 export default function Root() {
   return (
@@ -199,14 +199,6 @@ export default function Root() {
         className="overflow-clip h-screen"
         style={{ backgroundColor: 'rgb(53,53,65)' }}
       >
-        <Parallax
-          translateX={['0vw', '99vw']}
-          translateY={['99vh', '1vh']}
-          rootMargin={{ top: 50, bottom: 100, right: 100, left: 100 }}
-        >
-          Test
-        </Parallax>
-
         <Parallax speed={10} className="flex h-screen w-screen self-end">
           <Parallax speed={20} className="flex h-screen w-screen self-end">
             <div
@@ -276,15 +268,8 @@ export default function Root() {
           </div>
         </Parallax>
       </div>
-      <div
-        className="h-screen flex flex-col-reverse overflow-clip"
-        style={{ backgroundColor: 'rgb(153,255,255)' }}
-      >
-        <div className="bg-green-300 h-3/5 rotate-12 translate-x-1/3 translate-y-12  md:-rotate-12 rounded-tl-full md:translate-x-1/2 md:translate-y-5"></div>
-      </div>
-      <div className="h-screen">
-        <div className="containerize"></div>
-      </div>
+      <Hill />
+      <div className="h-screen"></div>
     </ParallaxProvider>
   );
 }

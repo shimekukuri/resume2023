@@ -19,3 +19,11 @@ body {
 :has(> .containerize) {
   container-type: inline-size;
 }
+
+@keyframes animateTitle {
+  from {
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
