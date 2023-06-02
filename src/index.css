@@ -20,10 +20,303 @@ body {
   container-type: inline-size;
 }
 
-@keyframes animateTitle {
-  from {
+/* Large Screens */
+@media screen and (min-width: 720px) {
+  @keyframes hillAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50vw) translateY(30vh) rotate(-30deg);
+    }
   }
-  to {
-    transform: translateX(-30%);
+
+  @keyframes letter0 {
+    from {
+    }
+    to {
+      transform: translateX(-50px) translateY(-10px);
+    }
+  }
+  @keyframes letter1 {
+    from {
+    }
+    to {
+      transform: translateX(-45px) translateY(-15px);
+    }
+  }
+  @keyframes letter2 {
+    from {
+    }
+    to {
+      transform: translateX(-35px) translateY(-10px);
+    }
+  }
+  @keyframes letter3 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter4 {
+    from {
+    }
+    to {
+      transform: translateX(-25px) translateY(10px);
+    }
+  }
+  @keyframes letter5 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter6 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter7 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter8 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter9 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter10 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter11 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter12 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+
+  .animateTitle {
+    animation: hillAnimation 800ms ease-out 100ms forwards;
+  }
+
+  .animateTitle .letter0 {
+    animation: letter0 800ms ease-out 100ms forwards;
+  }
+  .animateTitle .letter1 {
+    animation: letter1 800ms ease-out 100ms forwards;
+  }
+  .animateTitle .letter2 {
+    animation: letter2 800ms ease-out 100ms forwards;
+  }
+  .animateTitle .letter3 {
+    animation: letter3 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter4 {
+    animation: letter4 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter5 {
+    animation: letter5 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter6 {
+    animation: letter6 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter7 {
+    animation: letter7 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter8 {
+    animation: letter8 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter9 {
+    animation: letter9 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter10 {
+    animation: letter10 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter11 {
+    animation: letter11 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter12 {
+    animation: letter12 500ms ease-in 100ms forwards;
   }
 }
+
+/* Small Screens */
+@media screen and (max-width: 480px) {
+  @keyframes hillAnimation {
+    from {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(-50vw) translateY(30vh) rotate(-30deg) scale(1);
+    }
+  }
+
+  @keyframes letter0 {
+    from {
+    }
+    to {
+      transform: translateX(-50px) translateY(-10px);
+    }
+  }
+  @keyframes letter1 {
+    from {
+    }
+    to {
+      transform: translateX(-45px) translateY(-15px);
+    }
+  }
+  @keyframes letter2 {
+    from {
+    }
+    to {
+      transform: translateX(-35px) translateY(-10px);
+    }
+  }
+  @keyframes letter3 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter4 {
+    from {
+    }
+    to {
+      transform: translateX(-25px) translateY(10px);
+    }
+  }
+  @keyframes letter5 {
+    from {
+    }
+    to {
+      transform: translateX(-15px) translateY(20px);
+    }
+  }
+  @keyframes letter6 {
+    from {
+    }
+    to {
+      transform: translateX(-5px) translateY(5px);
+    }
+  }
+  @keyframes letter7 {
+    from {
+    }
+    to {
+      transform: translateX(10px) translateY(0px);
+    }
+  }
+  @keyframes letter8 {
+    from {
+    }
+    to {
+      transform: translateX(20px) translateY(10px);
+    }
+  }
+  @keyframes letter9 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter10 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter11 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+  @keyframes letter12 {
+    from {
+    }
+    to {
+      transform: translateX(-96px) translateY(96px);
+    }
+  }
+
+  .animateTitle {
+    animation: hillAnimation 800ms ease-out 100ms forwards;
+  }
+
+  .animateTitle .letter0 {
+    animation: letter0 800ms ease-out 100ms forwards;
+  }
+  .animateTitle .letter1 {
+    animation: letter1 800ms ease-out 100ms forwards;
+  }
+  .animateTitle .letter2 {
+    animation: letter2 800ms ease-out 100ms forwards;
+  }
+  .animateTitle .letter3 {
+    animation: letter3 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter4 {
+    animation: letter4 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter5 {
+    animation: letter5 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter6 {
+    animation: letter6 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter7 {
+    animation: letter7 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter8 {
+    animation: letter8 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter9 {
+    animation: letter9 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter10 {
+    animation: letter10 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter11 {
+    animation: letter11 500ms ease-in 100ms forwards;
+  }
+  .animateTitle .letter12 {
+    animation: letter12 500ms ease-in 100ms forwards;
+  }
+}
+
+/* WEB DEVELOPER 13*/

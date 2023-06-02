@@ -8,6 +8,7 @@ import kirby from '/kirbynobg.png';
 import testoo from '/testSmall.png';
 import { Children, useEffect, useState, useRef } from 'react';
 import Hill from '../scenes/hillScene/Hill';
+import AboutMe from '../aboutMe/AboutMe';
 
 export default function Root() {
   return (
@@ -269,7 +270,7 @@ export default function Root() {
         </Parallax>
       </div>
       <Hill />
-      <div className="h-screen"></div>
+      <AboutMe />
     </ParallaxProvider>
   );
 }
