@@ -11,6 +11,7 @@ export default function Hill() {
         setInView(() => e[0].isIntersecting);
       }
     });
+
     if (reff.current) {
       observer.observe(reff.current);
     }

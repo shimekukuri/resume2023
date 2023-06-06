@@ -249,7 +249,7 @@ body {
     from {
     }
     to {
-      transform: translateX(-96px) translateY(96px);
+      transform: translateX(35px) translateY(15px);
     }
   }
   @keyframes letter10 {
