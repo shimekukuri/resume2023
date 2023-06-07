@@ -20,6 +20,10 @@ body {
   container-type: inline-size;
 }
 
+:has(> .parent-flex) {
+  display: flex;
+}
+
 /* Large Screens */
 @media screen and (min-width: 720px) {
   @keyframes hillAnimation {

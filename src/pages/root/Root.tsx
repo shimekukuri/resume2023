@@ -9,6 +9,7 @@ import testoo from '/testSmall.png';
 import { Children, useEffect, useState, useRef } from 'react';
 import Hill from '../scenes/hillScene/Hill';
 import AboutMe from '../aboutMe/AboutMe';
+import Observer from '../../utilities/components/Observer';
 
 export default function Root() {
   return (
@@ -271,6 +272,11 @@ export default function Root() {
       </div>
       <Hill />
       <AboutMe />
+      <div className="bg-blue h-96 p-4">
+        <Observer>
+          <div>meep</div>
+        </Observer>
+      </div>
     </ParallaxProvider>
   );
 }
