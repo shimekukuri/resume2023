@@ -12,7 +12,7 @@ export default function Observer({ children }: { children: ReactNode }) {
           setInView(() => e[0].isIntersecting);
         }
       },
-      { threshold: 0.99 }
+      { threshold: 0.85 }
     );
 
     if (reff.current) {

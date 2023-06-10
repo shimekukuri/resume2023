@@ -10,6 +10,7 @@ import { Children, useEffect, useState, useRef } from 'react';
 import Hill from '../scenes/hillScene/Hill';
 import AboutMe from '../aboutMe/AboutMe';
 import Observer from '../../utilities/components/Observer';
+import Skills from '../scenes/skillsScene/Skills';
 
 export default function Root() {
   return (
@@ -271,12 +272,17 @@ export default function Root() {
         </Parallax>
       </div>
       <Hill />
-      <AboutMe />
-      <div className="bg-blue h-96 p-4">
+      <div className="h-screen">
         <Observer>
-          <div>meep</div>
+          <Skills />
         </Observer>
       </div>
+      <div className="bg-red-200 h-96 p-4">
+        <Observer>
+          <div>LOOK I"M 100% IN THE VIEW PORT WOOO</div>
+        </Observer>
+      </div>
+      <div className="h-96">meep</div>
     </ParallaxProvider>
   );
 }
