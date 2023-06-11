@@ -3,6 +3,7 @@ import { ReactNode, useEffect, useRef, useState } from 'react';
 export default function Observer({ children }: { children: ReactNode }) {
   const [inView, setInView] = useState<boolean>(false);
   const observed = useRef(null);
+  const [once, setOnce] = useState<boolean>(false);
 
   useEffect(() => {
     const reff = observed;
@@ -10,6 +11,9 @@ export default function Observer({ children }: { children: ReactNode }) {
       (e) => {
         if (observed.current) {
           setInView(() => e[0].isIntersecting);
+          if (e[0].isIntersecting) {
+            setOnce(() => true);
+          }
         }
       },
       { threshold: 0.85 }
@@ -27,8 +31,8 @@ export default function Observer({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="flex-1 parent-flex" ref={observed}>
-      {inView ? children : ''}
+    <div className="flex-1 parent-flex flex" ref={observed}>
+      {inView || once ? children : ''}
     </div>
   );
 }

@@ -34,6 +34,10 @@ body {
   }
 }
 
+.slideIn {
+  animation: slideInOpacity 400ms ease-in 0ms forwards;
+}
+
 .slideIn-200 {
   animation: slideInOpacity 400ms ease-in 200ms forwards;
 }
