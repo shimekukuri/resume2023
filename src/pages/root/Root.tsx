@@ -272,11 +272,7 @@ export default function Root() {
         </Parallax>
       </div>
       <Hill />
-      <div className="h-screen">
-        <Observer>
-          <Skills />
-        </Observer>
-      </div>
+      <Skills />
       <div className="bg-red-200 h-96 p-4">
         <Observer>
           <div>LOOK I"M 100% IN THE VIEW PORT WOOO</div>
