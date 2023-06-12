@@ -8,9 +8,13 @@ export default function Skills() {
         <div className="parent-flex flex-1 flex flex-col justify-between gap-24 px-4">
           <Observer>
             <div
-              className={`-translate-x-full opacity-0 slideIn flex-1 w-5/6 ml-4 md:ml-52 bg-blue-200 ${styles.glow1} rounded-xl`}
+              className={`-translate-x-full opacity-0 slideIn flex-1 w-5/6 ml-4 md:ml-52 bg-blue-200 ${styles.glow1} rounded-xl @container flex`}
             >
-              TS
+              <div className="flex-1 @[720px]:grid grid-cols-5 flex flex-col">
+                <div className="@[720px]:rounded-l-2xl col-span-2 p-4 bg-slate-500">
+                  d
+                </div>
+              </div>
             </div>
           </Observer>
           <Observer>
