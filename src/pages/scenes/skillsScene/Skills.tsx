@@ -15,7 +15,7 @@ export default function Skills() {
           </Observer>
           <Observer>
             <div
-              className={`translate-x-full opacity-0 slideIn-200 flex-1 w-5/6 self-end mr-4 md:mr-52 bg-red-200 h-full ${styles.glow2}`}
+              className={`translate-x-full opacity-0 slideIn-200 flex-1 w-5/6 self-end mr-4 md:mr-52 bg-red-200 h-full ${styles.glow2} rounded-xl`}
             >
               React
             </div>

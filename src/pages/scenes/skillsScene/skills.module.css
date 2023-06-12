@@ -1,9 +1,9 @@
 .glow1 {
   box-shadow: 0 0 60px 30px #fff,
-    /* inner white */ 0 0 100px 60px rgba(0, 122, 204);
+    /* inner white */ 0 0 100px 60px rgb(1, 69, 12);
   /* middle magenta */
 }
 
 .glow2 {
-  box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px rgb(97, 219, 251);
+  box-shadow: 0 0 50px 15px #48abe0;
 }
