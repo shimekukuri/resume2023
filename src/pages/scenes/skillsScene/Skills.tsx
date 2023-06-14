@@ -26,15 +26,19 @@ export default function Skills() {
           </Observer>
         </div>
       </div>
-      <div className="h-screen overflow-y-scroll overflow-x-clip mt-24">
+      <div className="h-screen overflow-x-clip mt-24">
         <div className="parent-flex flex-1 flex flex-col justify-between  px-4 gap-24">
           <Observer>
-            <div className="-translate-x-full opacity-0 slideIn-200 flex-1 w-5/6 ml-4 md:ml-52 bg-blue-200">
+            <div
+              className={`-translate-x-full opacity-0 slideIn-200 flex-1 w-5/6 ml-4 md:ml-52 bg-blue-200 ${styles.glow3}`}
+            >
               Next
             </div>
           </Observer>
           <Observer>
-            <div className="translate-x-full opacity-0 slideIn-200 flex-1 w-5/6 self-end mr-4 md:mr-52 bg-red-200 h-full">
+            <div
+              className={`translate-x-full opacity-0 slideIn-200 flex-1 w-5/6 self-end mr-4 md:mr-52 bg-red-200 h-full ${styles.glow1}`}
+            >
               Vite
             </div>
           </Observer>

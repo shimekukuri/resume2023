@@ -272,6 +272,7 @@ export default function Root() {
         </Parallax>
       </div>
       <Hill />
+
       <Skills />
       <div className="bg-red-200 h-96 p-4">
         <Observer>
