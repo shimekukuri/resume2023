@@ -3,8 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Root from './pages/root/Root.tsx';
-import Test from './pages/test/Test.tsx';
-import { ParallaxContext } from 'react-scroll-parallax';
+import Blog from './pages/blog/Blog.tsx';
 
 const browser = createBrowserRouter([
   {
@@ -13,8 +12,8 @@ const browser = createBrowserRouter([
     children: [{ path: 'test', element: <div>test</div> }],
   },
   {
-    path: '/test2',
-    element: <Test />,
+    path: '/blog',
+    element: <Blog />,
   },
 ]);
 

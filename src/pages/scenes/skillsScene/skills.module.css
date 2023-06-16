@@ -1,14 +1,27 @@
 .glow1 {
-  box-shadow: 0 0 60px 31px #9f72a4, /* inner white */ 0 0 100px 60px #0d324d;
+  box-shadow: 0 0 30px 15px #9f72a4, /* inner white */ 0 0 500px 30px #0d324d;
   /* middle magenta */
 }
 
 .glow2 {
-  box-shadow: 0 0 50px 15px #48abe0, 0 0 70px 30px #074465;
+  box-shadow: 0 0 60px 31px #29524a, 0 0 100px 60px #e9bcb7;
 }
 
 .glow3 {
   box-shadow: 0 0 50px 15px #e05c48, 0 0 70px 30px #ec9689;
+}
+
+.glow4 {
+  box-shadow: 0 0 50px 15px #e5bdf6, 0 0 70px 30px #d8dede;
+  /* e5bdf6 */
+}
+
+.glow5 {
+  box-shadow: 0 0 50px 15px #000000, 0 0 70px 30px #7f8c8d;
+}
+
+.glow6 {
+  box-shadow: 0 0 50px 15px #ddbdfc, 0 0 70px 30px #96c8fb;
 }
 
 .custombg1 {
@@ -19,4 +32,24 @@
 .custombg2 {
   background-color: #7f5a83;
   background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+}
+
+.custombg3 {
+  background-color: #e9bcb7;
+  background-image: linear-gradient(315deg, #e9bcb7 0%, #29524a 74%);
+}
+
+.custombg4 {
+  background-color: #d8dede;
+  background-image: linear-gradient(315deg, #d8dede 0%, #e5bdf6 74%);
+}
+
+.custombg5 {
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+}
+
+.custombg6 {
+  background-color: #96c8fb;
+  background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%);
 }
