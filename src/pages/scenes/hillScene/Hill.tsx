@@ -48,9 +48,7 @@ export default function Hill() {
         <div className="letter12">R</div>
       </div>
       <div className="bg-green-300 h-3/5 rotate-12 translate-x-1/3 translate-y-12  md:-rotate-12 rounded-tl-full md:translate-x-1/2 md:translate-y-5"></div>
-      <div className={`absolute`} ref={observable}>
-        test
-      </div>
+      <div className={`absolute`} ref={observable}></div>
     </div>
   );
 }
