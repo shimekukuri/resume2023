@@ -6,10 +6,10 @@ export default function Blog() {
         className="peer/navid cursor-pointer absolute bottom-5 @[720px]:top-0 right-4 z-10"
         type="checkbox"
       />
-      <div className="absolute bottom-0 @[720px]:top-0 h-16  w-full backdrop-blur-md peer-checked/navid:bg-blue-100 bg-opacity-10 peer-checked/navid:h-screen">
+      <div className="absolute bottom-0 @[720px]:top-0 h-16  w-full backdrop-blur-md peer-checked/navid:bg-blue-100 bg-opacity-10 peer-checked/navid:animate-height-screen">
         Nav
       </div>
-      <div className="flex-1 bg-green-100 overflow-y-scroll min-h-max">
+      <div className="flex flex-col flex-1 gap-4 bg-green-100 overflow-y-scroll min-h-max">
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>
@@ -17,25 +17,7 @@ export default function Blog() {
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>
-        <div>
-          <input
-            className="peer/test"
-            type="checkbox"
-            id="test"
-            defaultChecked={false}
-          />
-          <label htmlFor="test" className=" peer-checked/test:text-red-500">
-            Test
-          </label>
-        </div>
-        <input
-          id="test2"
-          type="checkbox"
-          className="cursor-pointer peer/test2"
-        />
-        <div className="peer-checked/test2:line-through cursor-pointer peer-checked/test2:text-slate-500">
-          Meep
-        </div>
+
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>

@@ -5,10 +5,7 @@ import {
 } from 'react-scroll-parallax';
 import star from '/space2.png';
 import kirby from '/kirbynobg.png';
-import testoo from '/testSmall.png';
-import { Children, useEffect, useState, useRef } from 'react';
 import Hill from '../scenes/hillScene/Hill';
-import AboutMe from '../aboutMe/AboutMe';
 import Observer from '../../utilities/components/Observer';
 import Skills from '../scenes/skillsScene/Skills';
 
