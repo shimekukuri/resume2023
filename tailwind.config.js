@@ -5,7 +5,7 @@ export default {
     extend: {
       keyframes: {
         heightscreen: {
-          100: { height: '50vh' },
+          100: { transform: 'scale(1.6)' },
         },
 
         scale: {
@@ -32,7 +32,7 @@ export default {
         },
       },
       animation: {
-        'height-screen': '200 ease-in-out forwards chatBoxClose',
+        'height-screen': '200 ease-in-out forwards heightscreen',
         'scale-up': '100ms ease-in forwards scale',
         'chat-box-close-200': '200ms ease-in-out forwards chatBoxClose',
         'chat-box-close-300': '300ms ease-in-out forwards chatBoxClose',

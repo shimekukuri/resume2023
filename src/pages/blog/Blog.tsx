@@ -9,6 +9,9 @@ export default function Blog() {
       <div className="absolute bottom-0 @[720px]:top-0 h-16  w-full backdrop-blur-md peer-checked/navid:bg-blue-100 bg-opacity-10 peer-checked/navid:animate-height-screen">
         Nav
       </div>
+      <div className="absolute hidden bottom-0 right-0 left-0 top-0 bg-red-500 peer-checked/navid:block">
+        d
+      </div>
       <div className="flex flex-col flex-1 gap-4 bg-green-100 overflow-y-scroll min-h-max">
         <div className="h-16 bg-red-200">test</div>
         <div className="h-16 bg-red-200">test</div>
