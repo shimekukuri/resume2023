@@ -8,6 +8,7 @@ import kirby from '/kirbynobg.png';
 import Hill from '../scenes/hillScene/Hill';
 import Observer from '../../utilities/components/Observer';
 import Skills from '../scenes/skillsScene/Skills';
+import Navigator from '../../utilities/components/nav/Nav';
 
 export default function Root() {
   return (

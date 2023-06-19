@@ -20,6 +20,10 @@ body {
   container-type: inline-size;
 }
 
+:has(> .parent-relative) {
+  position: relative;
+}
+
 :has(> .parent-flex) {
   display: flex;
 }
@@ -36,6 +40,8 @@ body {
 
 .slideIn {
   animation: slideInOpacity 400ms ease-in 0ms forwards;
+  animation: name duration timing-function delay iteration-count direction
+    fill-mode;
 }
 
 .slideIn-200 {
