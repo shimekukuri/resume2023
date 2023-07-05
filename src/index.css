@@ -60,6 +60,8 @@ body {
   animation: slideInOpacity 400ms ease-in 1000ms forwards;
 }
 
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+
 /* Large Screens */
 @media screen and (min-width: 720px) {
   @keyframes hillAnimation {
@@ -171,43 +173,57 @@ body {
   .animateTitle .letter0 {
     animation: letter0 800ms ease-out 100ms forwards;
   }
+
   .animateTitle .letter1 {
     animation: letter1 800ms ease-out 100ms forwards;
   }
+
   .animateTitle .letter2 {
     animation: letter2 800ms ease-out 100ms forwards;
   }
+
   .animateTitle .letter3 {
     animation: letter3 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter4 {
     animation: letter4 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter5 {
     animation: letter5 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter6 {
     animation: letter6 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter7 {
     animation: letter7 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter8 {
     animation: letter8 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter9 {
     animation: letter9 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter10 {
     animation: letter10 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter11 {
     animation: letter11 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter12 {
     animation: letter12 500ms ease-in 100ms forwards;
   }
 }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Small Screens */
 @media screen and (max-width: 480px) {
@@ -321,39 +337,51 @@ body {
   .animateTitle .letter0 {
     animation: letter0 800ms ease-out 100ms forwards;
   }
+
   .animateTitle .letter1 {
     animation: letter1 800ms ease-out 100ms forwards;
   }
+
   .animateTitle .letter2 {
     animation: letter2 800ms ease-out 100ms forwards;
   }
+
   .animateTitle .letter3 {
     animation: letter3 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter4 {
     animation: letter4 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter5 {
     animation: letter5 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter6 {
     animation: letter6 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter7 {
     animation: letter7 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter8 {
     animation: letter8 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter9 {
     animation: letter9 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter10 {
     animation: letter10 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter11 {
     animation: letter11 500ms ease-in 100ms forwards;
   }
+
   .animateTitle .letter12 {
     animation: letter12 500ms ease-in 100ms forwards;
   }

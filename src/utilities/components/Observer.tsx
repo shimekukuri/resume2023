@@ -1,6 +1,12 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 
-export default function Observer({ children }: { children: ReactNode }) {
+export default function Observer({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
   const [inView, setInView] = useState<boolean>(false);
   const observed = useRef(null);
   const [once, setOnce] = useState<boolean>(false);
@@ -31,7 +37,10 @@ export default function Observer({ children }: { children: ReactNode }) {
   }, []);
 
   return (
-    <div className="flex-1 parent-flex flex" ref={observed}>
+    <div
+      className={`flex-1 parent-flex flex ${className ? className : ''}`}
+      ref={observed}
+    >
       {inView || once ? children : ''}
     </div>
   );
